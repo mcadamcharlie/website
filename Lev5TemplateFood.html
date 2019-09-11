@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link rel="stylesheet" href="themes/Colour_scheme.min.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<!-- links to favicon!-->
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="ico" href="favicon.ico" type="image/x-icon">
+</head>
+
+
+<!--the styling of the pages - change to suit-->
+<style>
+
+</style>
+<body>
+
+<!--page 1 - the food categories to choose from-->
+<!--this page has an id of "pageone"--> - 
+<!--when linking to this page use "<a href=#pageone">Link Text</a>-->
+<div data-role="page" id="pageone">
+  <div data-role="header">
+   <div data-role="navbar">
+    <ul>
+        <li><a href="#login" data-icon="user">Login</a></li>
+        <li><a href="#" data-icon="info">About</a></li>
+        <li><a href="#games" data-icon="search">Search</a></li>
+		
+    </ul>
+   </div>
+  <h1>Game 2.0</h1>
+  </div>
+  <div data-role="main" class="ui-content">
+  <p>Choose from the following categories to order games</p>
+      <a href="#starters" class="ui-btn ui-btn-inline">Games</a>
+      <a href="#" class="ui-btn ui-btn-inline">New releases</a>
+      <a href="#rand" class="ui-btn ui-btn-inline">Random</a>
+    <br>
+  </div>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <div data-role="footer">
+  
+  <h1>Game v2.0</h1>
+  </div>
+</div> 
+
+
+<div data-role="page" id="rand">
+<range="">
+
+</div>
+
+
+<!--end of page 1 - main menu-->
+
+<!--page 2 the list of food-->
+<div data-role="page" id="starters">
+  <div data-role="header">
+  <div data-role="navbar">
+    <ul>
+        <li><a href="#pageone" data-icon="home">Home</a></li>
+        <li><a href="#basket" data-icon="shop">My Basket</a></li>
+        <li><a href="#startes" data-icon="search">Search</a></li>
+    </ul>
+   </div>
+  <h1>Games</h1>
+  </div>
+ <div data-role="starter" class="ui-content">
+    <h2>New release</h2>
+    <form class="ui-filterable">
+      <input id="myFilter" data-type="search">
+    </form>
+    <ul data-role="listview" data-filter="true" data-input="#myFilter" data-autodividers="true" data-inset="true">
+	
+	<!--put your list of items to search in alphabetical order-->
+	<li><a href="#aco">Assassin's creed origins</a></li>
+      
+	  <li><a href="#ds2" data-transition="flow">Destiny 2</a></li>
+	  
+	  <li><a href="#ff18">Fifa 18</a></li>
+	  
+	  <li><a href="#grw" data-transition="slideup">Ghost recon wildlands</a></li>
+	  
+	  
+	  <!--the following option (Prawn Cocktail) is my example of a link choice-->
+	  <!--when the user clicks on it - they are taken to -->
+	  <!--the page with the id of #prawncocktail-->
+	  <!--there is also a flip transition applied-->
+	   <li><a href="#">Halo wars 2</a></li>
+	  
+	  <li><a href="#mea" data-transition="flip">Mass Effect Andromeda</a></li>
+     
+      
+      <li><a href="#">Star Wars The Old Republic</a></li>
+	  <li><a href="#">Skyrim Special Editon</a></li>
+	  
+	  <li><a href="#rss" data-transition="flip">Rainbow six seige</a></li>
+      <li><a href="#rrp" data-transition="flow">RareReplay</a></li>
+      
+	  <li><a href="#">Sea of Thieves</a></li>
+	  
+    </ul>
+  </div>
+  <div data-role="footer">
+  <h1>My Recipe Finder</h1>
+  </div>
+</div> 
+<!--end of page 2-->
+<!--page 3 - prawn cocktail recipe-->
+<!--the following has an id=prawnCocktail - you use #prawnCocktail when linking here-->
+<div data-role="page" id="mea">
+ <div data-role="header">
+  <div data-role="navbar">
+    <ul>
+        <li><a href="#starters" data-icon="arrow-l" data-transition="flip" data-direction="reverse">Back</a></li>
+        <li><a href="#basket" data-icon="shop">My Basket</a></li>
+        <li><a href="#games" data-icon="search">Search</a></li>
+    </ul>
+   </div>
+  <h1>Mass Effect Andromeda</h1>
+  </div>
+   <div data-role="main" class="ui-content">
+  <h4>7/10 rating</h4>
+  <div class="ui-grid-a">
+      <div class="ui-block-a">
+
+
+	  <p>Be the Pathfinder
+• Chart Your Own Course in a Dangerous New Galaxy. Unravel the mysteries of the Andromeda galaxy as you discover rich, alien worlds in the search for humanity’s new home.
+
+The Mass Effect Universe you Love
+• Lead the First Humans in Andromeda on a Desperate Search for our New Home. In this new chapter of Mass Effect, meet and recruit all-new, interesting characters caught up in an epic space saga filled with mystery and galactic conflict.
+
+Battle Like Never Before
+• Fight with your Pathfinder Team in Battle Against Terrifying Enemies and Creatures. New additions like destructible environments, boosted jumps for added verticality, and all-new weapons and Biotics make combat more thrilling than ever. 
+
+Play Your Way
+• Build a Formidable Hero with Amazing Weapons, Powers and Tech. With a much more flexible skill and weapon progression tree, you can replicate your play style to make you unstoppable against new, powerful alien enemies.
+
+
+MULTIPLAYER
+
+Welcome to the APEX Forces. Multiplayer in Mass Effect Andromeda places you into a class-based, 4-player co-op fire-team experience. Join up to 3 of your friends to take on the enemy threat where the Pathfinder can’t be and protect the interests of the Andromeda Initiative.
+ 
+Test your skills in the all-new mission system. Complete challenges and objectives as you head to key locations to recover critical intel, and eliminate high value enemy targets.  Gain shared experience and resources to customise and upgrade a wide range of character kits to your style. 
+ 
+Whether you’re at home or on the go, you can jump into the new optional Strike Teams feature allowing you to continue to earn progress and rewards for your single player campaign or multiplayer inventory.</p>
+
+
+
+        <h3>£45.99</h3>
+		 <a href="#basket" class="ui-btn ui-corner-all ui-shadow ui-icon-plus ui-btn-icon-left">Add to Basket</a>
+      </div>
+
+      <div class="ui-block-b">
+         <img src="mea.gif" height="250" width="450" />
+        
+      </div>
+    </div>
+ 
+  </div>
+
+  <div data-role="footer">
+  <h1>Fife Food Ordering Service</h1>
+  </div>
+  
+</div> 
+<!--End of page 3--> 
+
+<!--page 4 basket-->
+<div data-role="page" id="basket">
+ <div data-role="header">
+  <div data-role="navbar">
+    <ul>
+        <li><a href="#starters" data-icon="arrow-l">Back</a></li>
+        <li><a href="#basket" data-icon="shop">My Basket</a></li>
+        <li><a href="#games" data-icon="search">Search</a></li>
+    </ul>
+   </div>
+  <h1>My Order</h1>
+  </div>
+   <div data-role="main" class="ui-content">
+
+  <div class="ui-grid-a">
+      <div class="ui-block-a">
+		<p>Prawn Cocktail</p>
+		 
+      </div>
+
+      <div class="ui-block-b">
+       <p>£45.99</p>
+        
+      </div>
+	  <div class="ui-block-a">
+		<h4>Total to Pay</h4>
+	  </div>
+
+      <div class="ui-block-b">
+       <h4>£45.99</h4> 
+      </div>
+	  <div class="ui-block-a">
+		<a href="#success" class="ui-btn ui-corner-all ui-shadow ui-icon-check ui-btn-icon-left">Pay</a>
+	  </div>
+	 
+    </div>
+ 
+  </div>
+
+  <div data-role="footer">
+  <h1>Fife Food Ordering Service</h1>
+  </div>
+  
+</div> 
+<!--End of page 4-basket-> 
+
+
+
+
+<!--login form-->
+<div data-role="page" id="login">
+  <div data-role="header">
+  <div data-role="navbar">
+    <ul>
+        <li><a href="#pageone" data-icon="home">Home</a></li>
+        <li><a href="#basket" data-icon="shop">My Basket</a></li>
+        <li><a href="#games" data-icon="search">Search</a></li>
+    </ul>
+   </div>
+  <h1>Login</h1>
+  </div>
+<div data-role="main" class="ui-content">
+      <form method="post">
+        <div>
+          <h3>Login information</h3>
+          <label for="usrnm" class="ui-hidden-accessible">Username:</label>
+          <input type="text" name="user" id="usrnm" placeholder="Username">
+          <label for="pswd" class="ui-hidden-accessible">Password:</label>
+          <input type="password" name="passw" id="pswd" placeholder="Password">
+          <label for="log">Keep me logged in</label>
+          <input type="checkbox" name="login" id="log" value="1" data-mini="true">
+          <input type="submit" data-inline="true" value="Log in">
+        </div>
+      </form>
+    </div>
+  </div>
+
+<!--end of login Form-->
+<!--login form-->
+<div data-role="page" id="success">
+  <div data-role="header">
+  <div data-role="navbar">
+    <ul>
+        <li><a href="#pageone" data-icon="home">Home</a></li>
+        <li><a href="#basket" data-icon="shop">My Basket</a></li>
+        <li><a href="#games" data-icon="search">Search</a></li>
+    </ul>
+   </div>
+  <h1>Payment Successful</h1>
+  </div>
+<div data-role="main" class="ui-content">
+      <h4>Your payment has been successful.</h4>
+	  <p>Enjoy your meal - we hope you visit us again soon.</p>
+	  <p>Telephone 123456 if you have any questions.</p>
+      </form>
+    </div>
+  </div>
+
+<!--end of login Form-->
+
+
+
+<!--end of page 2-->
+<!--page 3 - prawn cocktail recipe-->
+<!--the following has an id=prawnCocktail - you use #prawnCocktail when linking here-->
+<div data-role="page" id="rss">
+ <div data-role="header">
+  <div data-role="navbar">
+    <ul>
+        <li><a href="#starters" data-icon="arrow-l" data-transition="flip" data-direction="reverse">Back</a></li>
+        <li><a href="#basket" data-icon="shop">My Basket</a></li>
+        <li><a href="#games" data-icon="search">Search</a></li>
+    </ul>
+   </div>
+  <h1>Rainbow six seige</h1>
+  </div>
+   <div data-role="main" class="ui-content">
+  <h4>7/10 rating</h4>
+  <div class="ui-grid-a">
+      <div class="ui-block-a">
+		<p>Tom Clancy’s Rainbow Six Siege is the latest installment of the acclaimed first-person shooter franchise developed by the renowned Ubisoft Montreal studio for the new generation of consoles and PC. Inspired by the reality of counter terrorist operatives across the world, Tom Clancy’s Rainbow Six Siege invites players to master the art of destruction. Intense, highly lethal close-quarters confrontations, tactics, team play, and explosive action are at the center of the experience. The multiplayer gameplay of Rainbow Six Siege sets a new bar for intense firefights and expert strategy in the rich legacy of past Tom Clancy’s Rainbow Six games. 
+
+Assume the role of a global counter terrorist operator, specializing in close-quarters combat, demolition and brutally precise execution during coordinated assaults. Tom Clancy’s Rainbow Six® Siege – The Art of Siege Edition comes with all elements to become a master strategist, giving you a clear tactical advantage to lead assault, defend and rescue hostages. </p>
+        <h3>£45.99</h3>
+		 <a href="#basket" class="ui-btn ui-corner-all ui-shadow ui-icon-plus ui-btn-icon-left">Add to Basket</a>
+      </div>
+
+      <div class="ui-block-b">
+         <img src="rss.gif" height="250" width="450" />
+        
+      </div>
+    </div>
+ 
+  </div>
+
+  <div data-role="footer">
+  <h1>Fife Food Ordering Service</h1>
+  </div>
+ 
+</div> 
+
+
+
+
+<div data-role="page" id="aco">
+ <div data-role="header">
+  <div data-role="navbar">
+    <ul>
+        <li><a href="#starters" data-icon="arrow-l" data-transition="flip" data-direction="reverse">Back</a></li>
+        <li><a href="#basket" data-icon="shop">My Basket</a></li>
+        <li><a href="#games" data-icon="search">Search</a></li>
+    </ul>
+   </div>
+  <h1>Assassin's Creed Origins</h1>
+  </div>
+   <div data-role="main" class="ui-content">
+  <h4>??/?? rating</h4>
+  <div class="ui-grid-a">
+      <div class="ui-block-a">
+
+
+	  <p>Journey into Ancient Egypt, the most mysterious place in History, during a crucial period that will shape the world. Discover the secrets behind the Great Pyramids, forgotten myths, the last pharaohs, and – engraved in long-lost hieroglyphics – the origin story of the Assassin’s Brotherhood.
+
+For the last four years, the team behind the acclaimed Assassin’s Creed IV Black Flag has been focused on crafting a new beginning for the franchise. Fight in a completely new way where you transition seamlessly between unique ranged and melee weapons and take on multiple enemies at once. Choose your assassin skills while exploring the full country of Ancient Egypt, engaging into multiple quests and gripping stories along a journey that will change civilization.</p>
+
+
+
+        <h3>£45.99</h3>
+		 <a href="#basket" class="ui-btn ui-corner-all ui-shadow ui-icon-plus ui-btn-icon-left">Add to Basket</a>
+      </div>
+<div class="ui-block-b">
+         <img src="aco.gif" height="250" width="450" />
+        
+      </div>
+	  </div>
+ 
+  </div>
+  </div>
+  
+  
+  <div data-role="page" id="ds2">
+ <div data-role="header">
+  <div data-role="navbar">
+    <ul>
+        <li><a href="#starters" data-icon="arrow-l" data-transition="flip" data-direction="flip">Back</a></li>
+        <li><a href="#basket" data-icon="shop">My Basket</a></li>
+        <li><a href="#games" data-icon="search">Search</a></li>
+    </ul>
+   </div>
+  <h1>Destiny 2</h1>
+  </div>
+   <div data-role="main" class="ui-content">
+  <h48/10 rating</h4>
+  <div class="ui-grid-a">
+      <div class="ui-block-a">
+
+
+	  <p>From the makers of the acclaimed hit game Destiny, comes the much-anticipated sequel. An action shooter that takes you on an epic journey across the solar system. Humanity’s last safe city has fallen to an overwhelming invasion force, led by Ghaul, the imposing commander of the brutal Red Legion. He has stripped the city’s Guardians of their power, and forced the survivors to flee. You will venture to mysterious, unexplored worlds of our solar system to discover an arsenal of weapons and devastating new combat abilities. To defeat the Red Legion and confront Ghaul, you must reunite humanity’s scattered heroes, stand together, and fight back to reclaim our home. Destiny 2 is a first-person action game and the evolution of its award winning, internationally acclaimed predecessor, Destiny. With a compelling, immersive new story and fresh beginning, Destiny 2 will deliver an experience for new and existing players to discover.
+
+Humanity's last safe city has fallen to an overwhelming invasion force, led by Ghaul, the imposing commander of the brutal Red Legion To defeat the Red Legion and confront Ghaul, you must reunite humanity's scattered heroes, stand together, and fight back to reclaim our home.
+
+Destiny 2 provides an unprecedented combination of cinematic storytelling, thrilling solo adventures, and cooperative, competitive, and public gameplay — all seamlessly woven into an expansive online world. Rally your friends or venture alone. The choice is yours.
+
+ 
+
+ Destiny 2 has even more activities for you to discover - explore in Adventures, Patrols, Lost Sectors, Quests, and Public Events. Along with finding new ways to connect with other players through Guided Games, that brings players together for the most challenging activities.</p>
+
+
+
+        <h3>£45.99</h3>
+		 <a href="#basket" class="ui-btn ui-corner-all ui-shadow ui-icon-plus ui-btn-icon-left">Add to Basket</a>
+      </div>
+<div class="ui-block-b">
+         <img src="ds2.gif" height="250" width="450" />
+        
+      </div>
+	  </div>
+ 
+  </div>
+
+  
+  </div>
+  
+  
+  
+  
+  
+  
+  <div data-role="page" id="ff18">
+ <div data-role="header">
+  <div data-role="navbar">
+    <ul>
+        <li><a href="#starters" data-icon="arrow-l" data-transition="flip" data-direction="reverse">Back</a></li>
+        <li><a href="#basket" data-icon="shop">My Basket</a></li>
+        <li><a href="#games" data-icon="search">Search</a></li>
+    </ul>
+   </div>
+  <h1>Fifa 18</h1>
+  </div>
+   <div data-role="main" class="ui-content">
+  <h4>??/?? rating</h4>
+  <div class="ui-grid-a">
+      <div class="ui-block-a">
+		<p>Powered by Frostbite, EA SPORTS FIFA 18 blurs the line between the virtual and real worlds, bringing to life the players, teams, and atmospheres that immerse you in the emotion of The World’s Game. The biggest step in gameplay innovation in franchise history, FIFA 18 introduces Real Player Motion Technology, an all-new animation system which unlocks a new level of responsiveness, and player personality – now Cristiano Ronaldo and other top players feel and move exactly like they do on the real pitch. 
+
+Player Control combined with new Team Styles and Positioning give you the tools to deliver Dramatic Moments that ignite Immersive Atmospheres around the world. The World’s Game also takes you on a global journey as Alex Hunter Returns along with a star-studded cast of characters, including Cristiano Ronaldo and other European football stars. 
+
+Fans of FIFA 17 and the addictive Journey gameplay will be pleased to hear that it’s coming back for FIFA 18. With an impressive 14 million plays on FIFA 17, this immersive story mode powered by Frostbite will take us back into the mind of Alex Hunter as we transition from football fan to Premier League legend.
+
+The newest release from FIFA begins just as the transfer window is ending, with rumours about what Alex Hunter will decide to do causing a fair few issues in his current team. Offers are rumoured to be coming in from Atlético Madrid, Bayern Munich, PSG and LA Galaxy, so it’s up to you choose Alex’s fate. Be careful though, as every decision, big or small, will influence your direction and every choice after that – making each game completely individual for each player.
+
+Not only will you be making important life decisions on and off the pitch for Alex, but you also get to decide how he looks. Complete goals and achievements to unlock new hairstyles, tattoos, clothing and more – you can even pick which is his dominant foot, to make his playing style suit you perfectly.
+
+Tour around the footballing world and visit incredible places such as Brazil, Los Angeles and more. Each destination features new and improved graphics including high definition dynamic crowds that will chant as you work into your attack and can be interacted with when you score, authentic sun light and positions, debris on the pitch, adaptive commentary, atmosphere grading and more. Sit down with other managers and discuss the transfer window with interactive negotiations. 
+
+The newest mapping technology provides each player with their own unique identity, which combined with the updated dribbling tech adds more creativity and excitement into the 1v1 battles. Locomotion and finishing animations have opened the option to unlock more fluid heading and striking combinations, allowing for more dramatic goals and saves than we’re used to. These new and exciting graphics provide the players with the skillset required to go from a gentle tap of the ball, into a full sprint like Ronaldo, giving you the most realistic gameplay that we have ever seen from FIFA. </p>
+        <h3>£45.99</h3>
+		 <a href="#basket" class="ui-btn ui-corner-all ui-shadow ui-icon-plus ui-btn-icon-left">Add to Basket</a>
+      </div>
+
+      <div class="ui-block-b">
+         <img src="ff18.gif" height="250" width="450" />
+        
+      </div>
+    </div>
+ 
+  </div>
+
+  <div data-role="footer">
+  <h1>Fife Food Ordering Service</h1>
+  </div>
+ 
+</div>
+
+
+ <div data-role="page" id="rrp">
+ <div data-role="header">
+  <div data-role="navbar">
+    <ul>
+        <li><a href="#starters" data-icon="arrow-l" data-transition="flip" data-direction="reverse">Back</a></li>
+        <li><a href="#basket" data-icon="shop">My Basket</a></li>
+        <li><a href="#games" data-icon="search">Search</a></li>
+    </ul>
+   </div>
+  <h1>Rare Replay</h1>
+  </div>
+   <div data-role="main" class="ui-content">
+  <h4> 8/10 rating</h4>
+  <div class="ui-grid-a">
+      <div class="ui-block-a">
+		<p>To celebrate its 30th anniversary, RARE brings together the adventures of its iconic characters in a collection that spans the decades. From its earliest 2D classics to Xbox 360 triumphs, RARE Replay delivers a gaming treasure trove for veteran players and newcomers alike.
+
+As you brawl with the Battletoads, grab Jiggies in Banjo-Kazooie and fight the future in Perfect Dark, you’ll uncover bonus content and exclusive looks at the creation of RARE Replay’s hits. Master the basics or test your skills with all-new snapshot challenges and 10,000 Gamerscore. Gaming’s greatest are back, lovingly presented and exclusively on Xbox One! </p>
+        <h3>£45.99</h3>
+		 <a href="#basket" class="ui-btn ui-corner-all ui-shadow ui-icon-plus ui-btn-icon-left">Add to Basket</a>
+      </div>
+
+      <div class="ui-block-b">
+         <img src="rrp.gif" height="250" width="450" />
+        
+      </div>
+    </div>
+ 
+  </div>
+
+  <div data-role="footer">
+  <h1>Fife Food Ordering Service</h1>
+  </div>
+ 
+</div>  
+
+
+ <div data-role="page" id="grw">
+ <div data-role="header">
+  <div data-role="navbar">
+    <ul>
+        <li><a href="#starters" data-icon="arrow-l" data-transition="flip" data-direction="reverse">Back</a></li>
+        <li><a href="#basket" data-icon="shop">My Basket</a></li>
+        <li><a href="#games" data-icon="search">Search</a></li>
+    </ul>
+   </div>
+  <h1>Ghost Recon WildLands</h1>
+  </div>
+   <div data-role="main" class="ui-content">
+  <h4> 8/10 rating</h4>
+  <div class="ui-grid-a">
+      <div class="ui-block-a">
+		<p>Bolivia, a few years from now: this beautiful South American country has become the largest cocaine producer in the world. The influential and vicious Santa Blanca drug cartel has turned the country into a narco-state, leading to lawlessness, fear, injustice, and violence. The cartel is on track to becoming a major underworld power and global threat.
+
+An all-out war is not the answer. A surgical, stealthy, lethal approach is the only way to stop the disease at its source. The Ghosts, an elite US Special Forces team, are sent behind enemy lines to wreak havoc, destabilize, and eventually break the alliance between the cartel and the corrupted government. 
+
+Facing an almighty enemy in a massive and hostile environment, the Ghosts will need to make critical moral choices and engage in tough battles to complete their mission – their grittiest and most dangerous operation to date.
+
+Tom Clancy’s Ghost Recon® Wildlands is the very first military shooter in a massive, dangerous, and responsive open world that you can play entirely solo or in four-player co-op. </p>
+        <h3>£45.99</h3>
+		 <a href="#basket" class="ui-btn ui-corner-all ui-shadow ui-icon-plus ui-btn-icon-left">Add to Basket</a>
+      </div>
+
+      <div class="ui-block-b">
+         <img src="grw.gif" height="250" width="550" />
+        
+      </div>
+    </div>
+ 
+  </div>
+
+  <div data-role="footer">
+  <h1>Fife Food Ordering Service</h1>
+  </div>
+ 
+</div>  
+
+<!--End of page 3--> 
+
+
+
+
+</body>
+</html>
